@@ -1,25 +1,27 @@
 {
-    "name": "my-finance-manager",
-    "version": "1.0.0",
-    "description": "A simple finance manager app",
-    "main": "src/index.js",
-    "scripts": {
-      "start": "react-scripts start",
-      "build": "react-scripts build",
-      "test": "react-scripts test",
-      "eject": "react-scripts eject"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/olikiverjesus/my-finance-manager.git"
-    },
-    "author": "Olikiver",
-    "license": "MIT",
-    "homepage": "https://olikiverjesus.github.io/my-finance-manager",
-    "bugs": {
-      "url": "https://github.com/olikiverjesus/my-finance-manager/issues"
-    },
-    "homepage": "https://olikiverjesus.github.io/my-finance-manager"
-
-  }
-  
+  "name": "my-finance-manager",
+  "version": "1.0.0",
+  "description": "A simple finance manager app",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-scripts": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olikiverjesus/my-finance-manager.git"
+  },
+  "author": "Olikiver",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/olikiverjesus/my-finance-manager/issues"
+  },
+  "homepage": "https://olikiverjesus.github.io/my-finance-manager"
+}
