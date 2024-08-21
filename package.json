@@ -1,0 +1,19 @@
+{
+  "name": "my-finance-manager",
+  "version": "1.0.0",
+  "description": "A simple finance manager app",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olikiverjesus/my-finance-manager.git"
+  },
+  "author": "Olikiver",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/olikiverjesus/my-finance-manager/issues"
+  },
+  "homepage": "https://github.com/olikiverjesus/my-finance-manager#readme"
+}
