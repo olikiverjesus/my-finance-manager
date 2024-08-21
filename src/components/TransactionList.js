@@ -1,24 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-function TransactionList() {
-  // Supondo que você tenha uma lista de transações
-  const transactions = [
-    { id: 1, name: 'Salário', amount: 6000, month: '2024-08' },
-    { id: 2, name: 'Alimentação', amount: -800, month: '2024-08' },
-  ];
+function ExpenseForm() {
+  const [amount, setAmount] = useState('');
+  const [description, setDescription] = useState('');
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Lógica para adicionar despesa
+  };
 
   return (
-    <div>
-      <h2>Histórico de Transações</h2>
-      <ul>
-        {transactions.map(transaction => (
-          <li key={transaction.id}>
-            {transaction.name} ({transaction.month}): R$ {transaction.amount}
-          </li>
-        ))}
-      </ul>
-    </div>
+    <form onSubmit={handleSubmit}>
+      <h2>Add Expense</h2>
+      <label>
+        Amount:
+        <input 
+          type="number" 
+          value={amount} 
+          onChange={(e) => setAmount(e.target.value)} 
+        />
+      </label>
+      <label>
+        Description:
+        <input 
+          type="text" 
+          value={description} 
+          onChange={(e) => setDescription(e.target.value)} 
+        />
+      </label>
+      <button type="submit">Add Expense</button>
+    </form>
   );
 }
 
-export default TransactionList;
+export default ExpenseForm;

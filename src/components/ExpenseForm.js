@@ -1,36 +1,34 @@
 import React, { useState } from 'react';
 
 function ExpenseForm() {
-  const [name, setName] = useState('');
   const [amount, setAmount] = useState('');
-  const [month, setMonth] = useState('');
+  const [description, setDescription] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Lógica para adicionar a despesa
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Lógica para adicionar despesa
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        placeholder="Nome da Despesa"
-      />
-      <input
-        type="number"
-        value={amount}
-        onChange={(e) => setAmount(e.target.value)}
-        placeholder="Valor"
-      />
-      <input
-        type="month"
-        value={month}
-        onChange={(e) => setMonth(e.target.value)}
-        placeholder="Mês da Despesa"
-      />
-      <button type="submit">Adicionar Despesa</button>
+      <h2>Add Expense</h2>
+      <label>
+        Amount:
+        <input 
+          type="number" 
+          value={amount} 
+          onChange={(e) => setAmount(e.target.value)} 
+        />
+      </label>
+      <label>
+        Description:
+        <input 
+          type="text" 
+          value={description} 
+          onChange={(e) => setDescription(e.target.value)} 
+        />
+      </label>
+      <button type="submit">Add Expense</button>
     </form>
   );
 }
